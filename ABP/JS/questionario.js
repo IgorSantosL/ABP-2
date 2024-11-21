@@ -1,7 +1,7 @@
 function listarQuestao() {
     // Verifica se o usuário está logado
     if (usuarioLogado) {
-      
+      document.getElementById("btnLogin").style.display="none"
     } else {
         alert("Ocorreu um erro ao se conectar com o servidor.")
     }

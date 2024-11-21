@@ -9,7 +9,7 @@ const pool = new Pool({
     host: 'localhost',           // Host do banco de dados
     database: 'ABP-teste',   // Nome do banco de dados
     password: 'admin',       // Senha do usuário
-    port: 5432,                  // Porta padrão do PostgreSQL ou 5433
+    port: 5433,                  // Porta padrão do PostgreSQL ou 5433
   });
 
 
