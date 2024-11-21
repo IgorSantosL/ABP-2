@@ -1,0 +1,63 @@
+-- Verifica e remove as tabelas se existirem
+DROP TABLE IF EXISTS tbquestao_por_usuario;
+DROP TABLE IF EXISTS tbquestao;
+DROP TABLE IF EXISTS tbusuario;
+
+-- Cria as tabelas
+CREATE TABLE tbusuario (
+    id SERIAL PRIMARY KEY, -- Utiliza SERIAL para gerar IDs automaticamente
+    nome VARCHAR(50) NOT NULL,
+    email VARCHAR NOT NULL -- Use VARCHAR sem tamanho máximo definido para maior flexibilidade
+);
+
+CREATE TABLE tbquestao (
+    id SERIAL PRIMARY KEY, -- Utiliza SERIAL para gerar IDs automaticamente
+    questao TEXT NOT NULL,
+    resposta BOOLEAN NOT NULL
+);
+
+CREATE TABLE tbquestao_por_usuario (
+    idusuario INTEGER NOT NULL REFERENCES tbusuario(id),
+    idquestao INTEGER NOT NULL REFERENCES tbquestao(id),
+    resposta_aluno BOOLEAN NOT NULL,
+    PRIMARY KEY (idusuario, idquestao)
+);
+
+-- Insere dados nas tabelas (verificando se a questão já existe antes de inserir)
+INSERT INTO tbquestao (questao, resposta) VALUES
+--Trilha 1
+('O método Scrum foi idealizado em 1993 por dois profissionais enquanto trabalhavam na Easel Corporation: Ken Schwaber e Jeff Sutherland. Classifique a afirmação acima como verdadeira ou falsa.', TRUE),
+('Um dos principais objetivos do método Scrum é facilitar o entendimento do projeto por todos os participantes e deixar as reuniões diárias mais rápidas. Classifique a afirmação acima como verdadeira ou falsa.', TRUE),
+('O Scrum foi originalmente criado para gerenciamento de equipes de marketing. Classifique a afirmação acima como verdadeira ou falsa.', FALSE),
+--Trilha 2
+('O principal objetivo do Scrum é o de organizar uma equipe para desenvolver um produto mais rapidamente. Classifique a afirmação acima como verdadeira ou falsa.', TRUE),
+('O aumento da equipe para mais de 15 pessoas é algo que ajuda a tornar as reuniões diárias no Scrum mais rápidas. Classifique a afirmação acima como verdadeira ou falsa.', FALSE),
+('Normalmente, uma equipe Scrum é composta por grupos entre 9 a no máximo 10 pessoas. Classifique a afirmação acima como verdadeira ou falsa.', TRUE),
+--Trilha 3
+('Um time Scrum é composto por: Product Owner, Scrum Master e Time de Desenvolvimento. Classifique a afirmação acima como verdadeira ou falsa.', TRUE),
+('A revisão do Backlog, Daily Scrum, Reunião de coordenação e Sprint, são eventos essenciais para garantir o ciclo contínuo de entregas e melhorias em um projeto Scrum. Classifique a afirmação acima como verdadeira ou falsa.', FALSE),
+('Os principais elementos que definem a estrutura de um time Scrum: Hierarquia fixa, especialização única e reuniões diárias. Classifique a afirmação acima como verdadeira ou falsa.', FALSE),
+--Trilha 4
+('O Scrum Master é o responsável por priorizar os itens no Product Backlog. Classifique a afirmação acima como verdadeira ou falsa.', FALSE),
+('O Sprint Backlog contém todos os requisitos para o desenvolvimento do produto. Classifique a afirmação acima como verdadeira ou falsa.', FALSE),
+('O Product Backlog está sempre completo e evolui com base no feedback e é finalizado após o planejamento inicial. Classifique a afirmação acima como verdadeira ou falsa.', FALSE),
+--Trilha 5
+('O Scrum Master é o responsável por maximizar o valor do produto no Scrum. Classifique a afirmação acima como verdadeira ou falsa.', FALSE),
+('O Scrum Master não pode tomar decisões sobre o produto, ele apenas facilita o processo e remove obstáculos. Classifique a afirmação acima como verdadeira ou falsa.', FALSE),
+('O Time de Desenvolvimento no Scrum é autogerenciado e tem como responsabilidades decidir como organizar e realizar o trabalho, além de criar incrementos do produto ao final de cada sprint. Classifique a afirmação acima como verdadeira ou falsa.', TRUE),
+--Trilha 6
+('Durante a Sprint não há mudanças que comprometam o objetivo. Classifique a afirmação acima como verdadeira ou falsa.', TRUE),
+('Na Reunião de Planejamento da Sprint, o Scrum Master não participa da reunião e o time não define como o trabalho será realizado. Classifique a afirmação acima como verdadeira ou falsa.', FALSE),
+('O objetivo da Sprint Retrospective é identificar pontos de melhoria nos processos e ferramentas. Classifique a afirmação acima como verdadeira ou falsa.', TRUE);
+
+INSERT INTO tbusuario (nome, email)
+VALUES
+('Gustavo Hammes','daffa1632@gmail.com');
+
+INSERT INTO tbquestao_por_usuario(idusuario,idquestao,resposta_aluno) VALUES
+(1,1,FALSE);
+
+select tbusuario.nome, tbquestao.questao, tbquestao_por_usuario.resposta_aluno from tbquestao, tbusuario, tbquestao_por_usuario
+where tbusuario.id = tbquestao_por_usuario.idusuario
+and tbquestao.id = tbquestao_por_usuario.idquestao
+order by tbusuario.nome asc;

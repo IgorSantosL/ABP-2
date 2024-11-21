@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+
+    <!-- Conteúdo principal -->
+    <main class="content">
+      <div>
+        <h2>4ª Trilha – Explorando os Backlogs – Domine o Product e Sprint Backlog!</h2>
+        <h3>Tipos de backlog</h3>
+        <h4>Sprint Backlog:</h4>
+        <p>
+          Uma lista de tarefas que o Scrum Team se compromete a fazer em um
+          sprint. Os itens do Sprint Backlog são extraídos do Product Backlog,
+          o time define quais itens serão trabalhados durante o Sprint
+          Planning Meeting, criando um plano para entregar o incremento de
+          produto “Pronto” ao final da sprint.<br /><br />
+          Sprint backlog é uma ferramenta que ajuda a organizar as tarefas e a
+          aumentar a produtividade da equipe, permitindo a conclusão mais
+          rápida do projeto. A sprint é o período limitado (até 1 mês) no qual
+          o time trabalha nos itens do backlog selecionados.<br /><br />
+          Durante a sprint, ocorrem reuniões diárias com duração máxima de 15
+          minutos. Nessas reuniões, cada membro da equipe compartilha o que
+          foi realizado no dia anterior, o que está planejado para o dia e
+          qualquer impedimento encontrado. Ao final da sprint, é essencial
+          revisar o que deve ser mantido, o que pode ser aprimorado e o que
+          deve ser descartado.<br /><br />
+          O objetivo de cada sprint é entregar um produto que possa ser usado,
+          ou seja, algo que é testado, inspecionado e que poderia ser entregue
+          ao usuário final, ao final de cada sprint.<br /><br />
+          Ao final da sprint, o time revisa o que foi realizado e identifica
+          melhorias para as próximas sprints. A 'sprint backlog review' é uma
+          previsão do que será entregue no próximo incremento, garantindo que
+          a equipe se mantenha focada e alinhada com os objetivos do
+          projeto.<br /><br />
+
+          O Scrum Master é responsável por manter o Sprint Backlog atualizado
+          durante o sprint, registrando as tarefas concluídas e o tempo
+          restante para as que ainda não estão prontas.
+        </p>
+      </div>
+
+      <!-- Paginação -->
+      <div class="pagination">
+        <button id="btn trilha4_1">1</button>
+        <button class="active">2</button>
+        <button id="btn trilha4_3">3</button>
+      </div>
+    </main>
+  </div>
+  <script src="/JS/trilha4_2.js"></script>
+</body>
+
+</html>

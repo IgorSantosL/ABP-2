@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+
+      <!-- Conteúdo principal -->
+      <main class="content">
+        <div>
+          <h2>5ª Trilha – Missões no Scrum – Desafios em Cada Etapa!</h2>
+          <p></p>
+          <h3>Cancelamento da Sprint</h3>
+          <p>
+            A sprint pode ser cancelada somente pelo Product Owner se o objetivo
+            se tornar obsoleto, seja por mudanças no mercado ou nas condições do
+            projeto. No entanto, devido à curta duração das sprints, o
+            cancelamento é raro e pode ser traumático para o time.
+          </p>
+          <h3>Mudanças</h3>
+          <p>
+            Quando alterações forem necessárias, é o momento da segunda sprint.
+            O que não pode ser concluído ou precisa de mais especificações deve
+            ser planejado para ser finalizado na próxima sprint. No Scrum, as
+            mudanças são incrementais, com o objetivo de chegar a um produto
+            funcional.
+          </p>
+          <div class="questionario">
+            <h3 class="highlight">
+              <span>Quase lá! Esta é a penúltima missão antes do desafio final. 
+                <br>Mantenha o foco e a coragem aventureiro, o prêmio está logo à frente!</span>
+            </h3>
+            <br>
+            <div class="btn_questionario">
+              <button id="btn_questionario" type="submit">Começar questionário</button>
+            </div>
+          </div>
+        </div>
+        <!-- Paginação -->
+        <div class="pagination">
+          <button id="btn trilha5_1">1</button>
+          <button id="btn trilha5_2">2</button>
+          <button id="btn trilha5_3">3</button>
+          <button id="btn trilha5_4">4</button>
+          <button id="btn trilha5_5">5</button>
+          <button class="active">6</button>
+        </div>
+      </main>
+    </div>
+    <script src="/JS/trilha5_6.js"></script>
+  </body>
+</html>

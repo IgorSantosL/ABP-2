@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+
+      <!-- Conteúdo principal -->
+      <main class="content">
+        <div>
+          <h2>2ª Trilha: Diferenciais em Jogo - Ágil vs. Scrum!</h2><br>
+          <h3>Principal diferença entre a Metodologia Ágil e o Scrum </h3>
+          <p>
+            A principal diferença entre a Metodologia Ágil e o Scrum reside em
+            seus propósitos e escopos. A Metodologia Ágil é uma filosofia
+            abrangente que busca resolver problemas de forma eficiente e
+            flexível, priorizando a entrega contínua de valor em um curto espaço
+            de tempo. Em contrapartida, o Scrum é uma estrutura específica
+            dentro do universo ágil, projetada para organizar equipes e otimizar
+            o desenvolvimento de produtos, permitindo entregas rápidas e
+            iterativas.
+          </p>
+          <img src="/Assets/diferenciais.png" width="auto" height="auto" />
+        </div>
+
+        <!-- Paginação -->
+        <div class="pagination">
+          <button class="active">1</button>
+          <button id="btn trilha2_2">2</button>
+          <button id="btn trilha2_3">3</button>
+          <button id="btn trilha2_4">4</button>
+        </div>
+      </main>
+    </div>
+    <script src="/JS/trilha2_1.js"></script>
+  </body>
+</html>

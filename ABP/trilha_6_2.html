@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+
+      <!-- Conteúdo principal -->
+      <main class="content">
+        <div>
+          <h2>6ª Trilha – Finalizando sua jornada</h2>
+
+          <h3>3. Planejamento da Sprint (Sprint Planning)</h3>
+
+          <p>
+            • Uma Sprint é um ciclo de trabalho fixo (normalmente de 1 a 4
+            semanas) no qual a equipe entrega um incremento do produto.<br />
+            • No início de cada Sprint, o time faz uma reunião de Sprint
+            Planning, onde escolhe itens do Product Backlog para criar o Sprint
+            Backlog (conjunto de tarefas a serem realizadas na sprint).<br />
+            • O Product Owner explica as prioridades e objetivos, enquanto o
+            time de desenvolvimento estima a capacidade de trabalho e seleciona
+            os itens que conseguem concluir na sprint.
+          </p>
+          <h3>4. Trabalho Diários com Daily Standups</h3>
+          <p>
+            • Todos os dias, o time realiza uma reunião rápida de no máximo 15
+            minutos, chamada de Daily Standup ou <b>Daily Scrum</b>.<br /><br />
+            • Cada membro responde a três perguntas:<br />
+            <b>1.</b> O que eu fiz ontem?<br />
+            <b>2.</b> O que farei hoje?<br />
+            <b>3.</b> Existe algum impedimento?<br /><br />
+            • Essa reunião ajuda a manter a equipe alinhada e permite que o
+            Scrum Master identifique impedimentos e atue para resolvê-los.
+          </p>
+          <h3>5. Execução da Sprint</h3>
+
+          <p>
+            • Durante a Sprint, o time trabalha nos itens do Sprint Backlog,
+            seguindo a ordem de prioridade e as especificações dadas.<br />
+            • Cada tarefa é dividida em subtarefas para facilitar a execução.<br />
+            • A equipe utiliza o <b>Quadro Scrum</b> (Kanban) para monitorar o
+            andamento das tarefas, dividindo-as em colunas como “A Fazer”, “Em
+            Progresso” e “Concluído”.
+          </p>
+        </div>
+
+        <!-- Paginação -->
+        <div class="pagination">
+          <button id="btn trilha6_1">1</button>
+          <button class="active">2</button>
+          <button id="btn trilha6_3">3</button>
+          <button id="btn trilha6_4">4</button>
+        </div>
+      </main>
+    </div>
+    <script src="/JS/trilha6_2.js"></script>
+  </body>
+</html>

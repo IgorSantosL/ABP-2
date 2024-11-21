@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            <div>
+                <h2>5ª Trilha – Missões no Scrum – Desafios em Cada Etapa!</h2>
+                <p>
+                    Os eventos no Scrum estruturam o processo de desenvolvimento de forma eficiente, garantindo o
+                    planejamento, a execução, e a melhoria contínua. A seguir, estão os principais eventos que compõem
+                    essa metodologia ágil.
+                <h3>Reunião de planejamento</h3>
+                <p>O trabalho a ser realizado na Sprint é planejado na reunião de planejamento da Sprint. Este plano é
+                    criado com o trabalho colaborativo de todo o Time Scrum. Reunião de planejamento da Sprint possui um
+                    time-box com no máximo oito horas para uma Sprint de um mês de duração. Para Sprints menores, este
+                    evento é usualmente menor. O Scrum Master garante que o evento ocorra e que os participantes
+                    entendam seu propósito. O Scrum Master auxilia o Time Scrum a manter-se dentro dos limites do
+                    time-box.
+                </p>
+                <h4>A reunião de planejamento da Sprint responde as seguintes questões:</h4>
+                <p>
+                    • O que pode ser entregue como resultado do incremento da próxima Sprint?<br>
+                    • Como o trabalho necessário para entregar o incremento será realizado?
+                </p>
+
+                </p>
+                
+
+            </div>
+
+            <!-- Paginação -->
+            <div class="pagination">
+                <button class="active">1</button>
+                <button id="btn trilha5_2">2</button>
+                <button id="btn trilha5_3">3</button>
+                <button id="btn trilha5_4">4</button>
+                <button id="btn trilha5_5">5</button>
+                <button id="btn trilha5_6">6</button>
+            </div>
+        </main>
+    </div>
+    <script src="/JS/trilha5_1.js"></script>
+</body>
+
+</html>

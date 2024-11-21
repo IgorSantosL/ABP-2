@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada Scrum</title>
+    <link rel="stylesheet" href="/css_ABP/certificado.css">
+    <script src="./JS/geral.js"></script>
+    <script src="./JS/questao.js"></script>
+    </head>
+    
+    <body onload="carregarLogin();listarQuestao();exibirMail()">
+      <header>
+        <h2 class="logo">
+          <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+        </h2>
+        <nav class="navigation">
+          <a href="./template.html">Início</a>
+          <a href="./trilha_1_1.html">Sua Jornada</a>
+          <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+          <button id="btnLogin" class="btnlogin-popup">Login</button>
+          <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </nav>
+      </header>
+    <div class="container">
+        
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            <div>
+                <img alt="Certificado" src="/Assets/Certificado.png">
+            </div>
+
+            <!-- Paginação -->
+            <div class="pagination">
+                <a  href="/Assents/Certificado.png" download class="btn-download" >
+                    <button class="btn-download">
+                        Download
+                    </button>
+                </a>
+            </div>
+
+        </main>
+    </div>
+    <script src="/JS/certificado.js"></script>
+</body>
+</html>

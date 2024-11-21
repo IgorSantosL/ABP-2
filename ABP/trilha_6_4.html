@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+      <!-- Conteúdo principal -->
+      <main class="content">
+        <div>
+          <h2>6ª Trilha – Finalizando sua jornada</h2>
+
+          <h3>Dicas para Usar o Scrum na Prática</h3>
+          <p>
+            <b>1. Defina bem as histórias de usuário</b> para evitar dúvidas na
+            execução.<br><br>
+            <b> 2. Envolva todas as partes interessadas</b> no planejamento e
+            revisão para garantir alinhamento.<br><br>
+            <b> 3. Mantenha o Product Backlog atualizado</b> e priorizado para
+            refletir as reais necessidades do cliente.<br><br>
+            <b> 4. Promova a transparência</b> e o trabalho em equipe,
+            incentivando todos a contribuir e participar das reuniões.<br><br>
+            <b> 5. Evite sobrecarregar a equipe</b>; uma Sprint bem-sucedida é
+            aquela em que tudo é concluído e o produto evolui com incrementos
+            consistentes. <br><br>
+            O Scrum, na prática, exige comprometimento e adaptação da equipe, e
+            seu sucesso depende de um ciclo contínuo de feedback e melhorias.
+          </p>
+          <div class="questionario">
+            <h3 class="highlight">
+              <span>
+                Parabéns, aventureiro! Você chegou à trilha final. 
+                <br>Mostre o que aprendeu, complete a última missão e conquiste o prêmio. 
+                <br>Agora é sua hora de brilhar!</span>
+            </h3>
+            <br>
+            <div class="btn_questionario">
+              <button id="btn_questionario" type="submit">Começar questionário</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paginação -->
+        <div class="pagination">
+          <button id="btn trilha6_1">1</button>
+          <button id="btn trilha6_2">2</button>
+          <button id="btn trilha6_3">3</button>
+          <button class="active">4</button>
+        </div>
+      </main>
+    </div>
+    <script src="/JS/trilha6_4.js"></script>
+  </body>
+</html>

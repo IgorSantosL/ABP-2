@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    background: #F2F2F2;
+    height: 100%;
+    padding-top: 39.7px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 30px 0%;
+    background: #4F378B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: black;
+    user-select: none;
+    width: auto;
+    height: auto;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .botao-logout {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .botao-logout:hover {
+    background: gray;
+    color: black;
+
+}
+.navigation .btnlogin-popup:hover {
+    background: gray;
+    color: black;
+}
+
+/* Layout da página com barra lateral */
+.container {
+    display: flex;
+    min-height: 100vh; /* 100% da tela menos o cabeçalho */
+    max-height: auto;
+
+}
+
+/* Barra lateral */
+.sidebar {
+    background-color: #8570bb; /* Roxo claro */
+    padding: 15px;
+    width: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    text-align: justify;
+}
+
+.sidebar ul li {
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+
+.sidebar p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li > a{
+    color:#fff
+}
+
+li > a:hover{
+    color: #6a0dad;
+}
+
+/* Área de conteúdo principal */
+.content {
+    flex: 1;
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content h2 {
+    font-size: 1.4rem;
+    color: #6a0dad; /* Roxo escuro */
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content p{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: justify;    
+}
+
+.content .imgtabela{
+    width: 900px;
+}
+
+.content img{
+    width: 600px;
+    height: auto;
+    /*border: 2px solid #4F378B;*/
+    margin: auto;
+    display: block;
+}
+
+.content li{
+    font-size: 0.9em;
+}
+
+/* Estilo da paginação */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.pagination button {
+    background-color: #9b59b6; /* Roxo claro */
+    border: none;
+    color: white;
+    padding: 10px 16.5px;
+    margin: 0 5px 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.pagination button.active {
+    background-color: #6a0dad; /* Roxo escuro */
+}
+
+.pagination button:hover {
+    background-color: #7b68ee;
+}
+
+/* Barra inferior de progresso */
+.progress-bar {
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #8570bb;
+    padding: 15px 15px 30px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 780px) {
+    header {
+        padding: 20px 50px;
+    }
+
+}
+
+
+.logo {
+    font-size: 1.5em;
+}
+
+.navigation a {
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+.navigation .btnlogin-popup {
+    width: 100px;
+    height: 40px;
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+.navigation .botao-logout {
+    width: 100px;
+    height: 40px;
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre as perguntas */
+    padding: 0; /* Remove a margem padrão da lista */
+}
+
+ol li {
+    flex-grow: 1; /* Permite que cada item ocupe todo o espaço disponível */
+    background-color: #f9f9f9; /* Fundo claro para as perguntas */
+    padding: 15px; /* Adiciona um preenchimento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content button[type="submit"] {
+    display: block;          /* Transforma o botão em elemento de bloco */
+    margin: 0 auto;          /* Centraliza horizontalmente */
+    background-color: #4F378B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.content button[type="submit"]:hover {
+    background-color: #6a0dad;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre as perguntas */
+    padding: 0; /* Remove a margem padrão da lista */
+}
+
+h3.highlight {
+    background-color: #FFD966; /* Amarelo suave para destacar */
+    color: #4F378B; /* Roxo escuro para combinar com o tema */
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar */
+}
+
+h3.highlight span {
+    color: #4F378B; /* Roxo escuro para um bom contraste */
+}
+
+/* Ajustes para telas maiores que 780px */
+@media only screen and (min-width: 781px) {
+    .hamburger {
+        display: none; /* Esconde o botão de hambúrguer em telas grandes */
+    }
+}
+
+/* Ajustes para telas de até 780px */
+@media only screen and (max-width: 780px) {
+    /* Barra de navegação */
+    header {
+        flex-direction: column;  /* Faz com que os itens fiquem alinhados em coluna */
+        justify-content: center; /* Alinha os itens ao centro */
+        padding: 0 20px; /* Ajusta o espaçamento da barra */
+    }
+
+    .logo {
+        font-size: 1.3em; /* Tamanho da logo ajustado para telas pequenas */
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between; /* Espaça os itens de navegação */
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navigation a {
+        font-size: 1.1em;  /* Ajuste do tamanho da fonte */
+        margin-left: 20px;
+        transition: opacity 0.3s ease-in-out; /* Adiciona transição de opacidade */
+    }
+
+    /* Ao abrir a sidebar, esconder os links de navegação */
+    .navigation.open a {
+        opacity: 0; /* Torna os links invisíveis */
+        pointer-events: none; /* Desabilita interações com os links */
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 101; /* Certifica-se que o ícone fique acima de outros elementos */
+    }
+
+    .hamburger .bar {
+        width: 30px;
+        height: 5px;
+        background-color: white;
+        margin: 5px 0;
+        transition: all 0.3s;
+    }
+
+    /* Estilo da sidebar */
+    .sidebar {
+        position: fixed;  /* Sidebar fixa no topo da tela */
+        top: 0;  /* Inicia no topo da página */
+        left: -250px;  /* Inicialmente fora da tela */
+        width: 250px;  /* Largura da sidebar */
+        height: 100vh;  /* Faz a sidebar ocupar toda a altura da tela */
+        background-color: #8570bb;
+        padding: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: left 0.3s ease-in-out; /* Transição suave ao abrir e fechar */
+        z-index: 100;  /* Garante que a sidebar fique acima do conteúdo */
+    }
+
+    /* Quando a sidebar está aberta, ela se move para a tela */
+    .sidebar.open {
+        left: 0;  /* Muda a posição para dentro da tela */
+    }
+
+    /* Ajustes no conteúdo principal quando a sidebar está aberta */
+    .content.open {
+        margin-left: 250px;  /* Desloca o conteúdo para a direita para dar espaço à sidebar */
+    }
+
+    /* Mostrar o ícone de fechar na sidebar */
+    .sidebar.open .close-btn {
+        display: block; /* Mostrar o botão de fechar na sidebar */
+    }
+
+    /* Ocultar os links de navegação quando a sidebar está fechada */
+    .sidebar ul {
+        display: none;
+        text-align: center;
+    }
+
+    /* Quando a sidebar está aberta, exibe a lista de navegação */
+    .sidebar.open ul {
+        display: block;
+    }
+
+    /* Botão de login */
+    .navigation .btnlogin-popup {
+        width: 100px;
+        height: 40px;
+        font-size: 1em;
+        margin-left: 20px;
+    }
+
+    .navigation .botao-logout {
+        width: 100px;
+        height: 40px;
+        font-size: 1em;
+        margin-left: 20px;
+    }
+
+    /* Ocultar o botão de login quando a sidebar estiver aberta */
+    .navigation.open .btnlogin-popup {
+        display: none;
+    }
+
+    .navigation.open .botao-logout {
+        display: none;
+    }
+}

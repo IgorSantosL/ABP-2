@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="content">
+      <div>
+        <h2>3ª Trilha – Papéis no Scrum - Conheça os Personagens!</h2>
+        <h3>Scrum Master:</h3>
+        <p>
+          O papel do scrum master também é crucial nessa metodologia. Ele atua
+          como um facilitador para a equipe, removendo impedimentos e
+          garantindo que as práticas do scrum sejam seguidas corretamente. O
+          scrum master também ajuda a promover uma cultura de melhoria
+          contínua e de colaboração dentro do time.<br><br>
+          <b>Facilitador do Processo:</b> O Scrum Master atua como um
+          facilitador que ajuda o Time de Desenvolvimento a entender e
+          implementar as práticas do Scrum de forma eficaz. Ele organiza e
+          conduz eventos do Scrum, como as reuniões diárias (Daily Stand-ups),
+          Sprint Planning, Sprint Review e Sprint Retrospective.<br><br>
+          <b>Remoção de Impedimentos:</b> Um dos principais papéis do Scrum
+          Master é ajudar o time a identificar e remover impedimentos que
+          possam dificultar o progresso. Isso pode envolver resolver
+          conflitos, negociar com stakeholders e garantir que o time tenha os
+          recursos necessários.<br><br>
+          <b>Promotor da Melhoria Contínua:</b> O Scrum Master incentiva uma
+          cultura de melhoria contínua, promovendo práticas que ajudem o time
+          a se autoavaliar e se desenvolver. Ele utiliza a Sprint
+          Retrospective para discutir o que funcionou bem, o que não funcionou
+          e como o time pode melhorar.<br><br>
+          <b>Treinamento e Coaching:</b> O Scrum Master é responsável por
+          treinar a equipe e os stakeholders sobre a metodologia Scrum,
+          ajudando todos a entender seus papéis e responsabilidades. Ele
+          também serve como um mentor para o Time de Desenvolvimento,
+          orientando-os sobre como trabalhar de forma mais eficaz.<br><br>
+          <b>Apoio ao Product Owner:</b> Embora o Scrum Master não tome
+          decisões sobre o produto, ele colabora com o Product Owner para
+          garantir que o backlog seja bem compreendido pelo Time de
+          Desenvolvimento e que os processos estejam fluindo de maneira
+          eficiente.<br>
+        </p>
+      </div>
+
+      <!-- Paginação -->
+      <div class="pagination">
+        <button id="btn trilha3_1">1</button>
+        <button class="active">2</button>
+        <button id="btn trilha3_3">3</button>
+      </div>
+    </main>
+  </div>
+  <script src="/JS/trilha3_2.js"></script>
+</body>
+
+</html>

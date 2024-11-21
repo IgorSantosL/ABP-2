@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+
+      <!-- Conteúdo principal -->
+      <main class="content">
+        <div>
+          <h2>5ª Trilha – Missões no Scrum – Desafios em Cada Etapa!</h2>
+          <p></p>
+          <h3>Retrospectiva Sprint</h3>
+          <p>
+            Por fim, a retrospectiva tem como finalidade coletar o feedback de
+            todos os envolvidos para otimizar as próximas atividades do projeto.
+            Aqui, o mestre do Scrum também deve estar presente e a discussão
+            pode abordar pontos positivos e negativos do sprint, a possibilidade
+            de replicar a estratégia em outros projetos, as oportunidades de
+            melhoria etc.<br /><br />
+            O propósito da Retrospectiva da Sprint é:<br /><br />
+            • Inspecionar como a última Sprint foi em relação às pessoas, aos
+            relacionamentos, aos processos e às ferramentas;<br />
+            • Identificar e ordenar os principais itens que foram bem e as
+            potenciais melhorias; e,<br />
+            • Criar um plano para implementar melhorias no modo que o Time Scrum
+            faz seu trabalho;<br /><br />
+            Ao final da Retrospectiva da Sprint, o Time Scrum deverá ter
+            identificado melhorias que serão implementadas na próxima Sprint. A
+            implementação destas melhorias na próxima Sprint é a forma de
+            adaptação à inspeção que o Time Scrum faz a si próprio. A
+            Retrospectiva da Sprint fornece um evento dedicado e focado na
+            inspeção e adaptação, no entanto, as melhorias podem ser adotadas a
+            qualquer momento.
+          </p>
+
+          
+        </div>
+
+        <!-- Paginação -->
+        <div class="pagination">
+          <button id="btn trilha5_1">1</button>
+          <button id="btn trilha5_2">2</button>
+          <button id="btn trilha5_3">3</button>
+          <button id="btn trilha5_4">4</button>
+          <button class="active">5</button>
+          <button id="btn trilha5_6">6</button>
+        </div>
+      </main>
+    </div>
+    <script src="/JS/trilha5_5.js"></script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+
+    <!-- Conteúdo principal -->
+    <main class="content">
+      <div>
+        <h2>2ª Trilha: Diferenciais em Jogo - Ágil vs. Scrum!</h2>
+        <p>
+          Já o scrum, tem os seguintes pontos como características:<br><br>
+          <b>1. Papéis bem definidos:</b> O Scrum define três papéis principais — o Product Owner, que
+          representa os
+          interesses do cliente; o Scrum Master, que facilita o processo e remove impedimentos; e a equipe de
+          desenvolvimento, que é responsável por criar o produto.<br><br>
+          <b>2. Sprints:</b> O trabalho é dividido em iterações chamadas Sprints, que geralmente duram de uma a
+          quatro semanas. Cada Sprint resulta em um incremento do produto.<br><br>
+          <b>3. Product Backlog (Backlog do Produto): </b>Uma lista priorizada de funcionalidades, melhorias e
+          correções que devem ser implementadas no produto. O Product Owner é responsável por manter e
+          priorizar esse backlog.<br><br>
+          <b>4. Daily Scrum (Reuniões diárias):</b> Reuniões curtas realizadas diariamente para que a equipe
+          compartilhe o que fez, o que fará e identifique impedimentos. Isso promove a transparência e a
+          colaboração contínua.<br><br>
+          <b>5. Sprint Review (Revisão da Sprint):</b> Ao final de cada Sprint, a equipe realiza uma reunião para
+          demonstrar o que foi produzido e coletar feedback dos stakeholders. Isso ajuda a alinhar as
+          expectativas e ajustar o desenvolvimento conforme necessário.<br><br>
+          <b>6. Sprint Retrospective (Retrospectiva da Sprint): </b>Após a revisão, a equipe se reúne para refletir
+          sobre o Sprint que passou, identificando o que funcionou bem e o que pode ser melhorado. Esse ciclo
+          contínuo de feedback promove a melhoria contínua.<br><br>
+          <b>7. Product increment (Incremento de produto):</b> A cada Sprint, a equipe deve entregar um incremento do
+          produto que esteja pronto para uso, garantindo que o cliente receba valor continuamente.
+
+        </p>
+
+
+      </div>
+
+      <!-- Paginação -->
+      <div class="pagination">
+        <button id="btn trilha2_1">1</button>
+        <button id="btn trilha2_2">2</button>
+        <button class="active">3</button>
+        <button id="btn trilha2_4">4</button>
+      </div>
+    </main>
+  </div>
+  <script src="/JS/trilha2_3.js"></script>
+</body>
+
+</html>

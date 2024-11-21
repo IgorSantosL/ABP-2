@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+
+      <!-- Conteúdo principal -->
+      <main class="content">
+        <div>
+          <h2>4ª Trilha – Explorando os Backlogs –  Domine o Product e Sprint Backlog! </h2>
+          <h3>Tipos de backlog</h3>
+          <h4>Product Backlog:</h4>
+          
+          <p>
+            Lista de todas as tarefas, funcionalidades, requisitos e melhorias
+            necessárias para o desenvolvimento do produto. Ela evolui ao longo
+            do desenvolvimento e deve ser bem estruturada para que atenda
+            integralmente à necessidade do cliente. Algumas correções e mudanças
+            podem ser feitas no produto nas futuras versões.</p>
+            <p>O backlog é dinâmico, evoluindo conforme o produto e o ambiente.
+            Itens possuem atributos como descrição, ordem, estimativa e valor,
+            sendo que o Time de Desenvolvimento é responsável pelas estimativas
+            de esforço. A equipe do projeto deve ser capaz de determinar se cada
+            item do backlog é factível, se há informações suficientes e, ainda,
+            elaborar estimativas para eles. Com isso, pode-se determinar a
+            produtividade ou a velocidade do projeto.</p>
+
+            <p>Um Product Backlog nunca está completo. Os primeiros
+            desenvolvimentos apenas estabelecem os requisitos inicialmente
+            conhecidos e melhor entendidos. O Product Backlog evolui tanto
+            quanto o produto e o ambiente no qual ele será utilizado evoluem. O
+            Product Backlog é dinâmico, mudando constantemente para identificar
+            o que o produto necessita para ser mais apropriado, competitivo e
+            útil. O Product Backlog existirá enquanto o produto também
+            existir.</p>
+            <p>Como esse processo tem procedimentos bem definidos, é comum que as
+            pessoas tentem escapar dele fazendo solicitações urgentes. Para
+            evitar isso, todos os pedidos devem passar pelo Product Owner (PO) —
+            o único responsável por tudo o que acontece na lista de prioridades.
+            Ele é responsável por priorizar os itens do backlog, garantindo que
+            o time trabalhe no que é mais importante. O PO deve influenciar o
+            time, ajudando no entendimento e nas decisões conflituosas de troca,
+            mas as pessoas que irão realizar o trabalham fazem a estimativa
+            final.</p>
+            <p>O Product Backlog é a única fonte de trabalho do Scrum Team e não
+            faz parte da sprint.
+          </p>
+        </div>
+
+        <!-- Paginação -->
+        <div class="pagination">
+          <button class="active">1</button>
+          <button id="btn trilha4_2">2</button>
+          <button id="btn trilha4_3">3</button>
+        </div>
+      </main>
+    </div>
+    <script src="/JS/trilha4_1.js"></script>
+  </body>
+</html>

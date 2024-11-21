@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+
+    <!-- Conteúdo principal -->
+    <main class="content">
+      <div>
+        <h2>3ª Trilha – Papéis no Scrum - Conheça os Personagens!</h2>
+        <p>
+          O Time Scrum é composto pelo Product Owner, o Time de Desenvolvimento e o Scrum Master.<br>
+        </p>
+        <img class="papeis2" src="/Assets/papeis2.png" width="590px" height="auto">
+        <br>
+        <h3>P.O.:</h3>
+        <p>
+          Todo o trabalho necessário em um projeto é organizado pelo Product Owner (PO, ou proprietário do
+          produto, em uma tradução aproximada) dentro de um backlog, que é uma lista com todas as tarefas que
+          precisam ser realizadas para desenvolver um produto ou criar um projeto, podendo se estender por
+          semanas ou até meses. O PO é o responsável por priorizar os itens que surgem conforme demanda com o
+          cliente, garantindo que a equipe esteja sempre focada nas tarefas mais relevantes.<br>
+          <br>
+          <b>Maximização do Valor:</b> O Product Owner é fundamental para garantir que o produto final atenda
+          às expectativas do cliente e ao mercado. Para isso, ele deve ter um entendimento profundo do
+          mercado, dos usuários e das tendências, utilizando essas informações para direcionar o
+          desenvolvimento do produto.<br><br>
+          <b>Gerenciamento do Product Backlog:</b> O PO é responsável pela criação e manutenção do Product
+          Backlog, que é uma lista priorizada de requisitos do produto. Ele deve garantir que cada item do
+          backlog esteja bem definido, incluindo critérios de aceitação claros e descrições que permitam ao
+          Time de Desenvolvimento entender o que precisa ser feito.<br><br>
+          <b>Priorização de Itens:</b> O PO deve continuamente priorizar os itens do backlog com base no valor
+          para o cliente, feedback dos stakeholders e riscos associados. Essa priorização deve ser revisada em
+          cada Sprint Planning e ao longo do desenvolvimento, conforme novas informações e mudanças nas
+          necessidades surjam.<br><br>
+          <b>Alinhamento com Stakeholders:</b> O PO atua como a voz do cliente dentro da equipe Scrum,
+          garantindo que as necessidades e expectativas dos stakeholders sejam consideradas nas decisões sobre
+          o backlog. Ele deve ser um bom comunicador, facilitando diálogos entre o Time de Desenvolvimento e
+          os stakeholders.<br><br>
+          <b>Colaboração com o Time de Desenvolvimento:</b> O Product Owner deve trabalhar em estreita
+          colaboração com o Time de Desenvolvimento, esclarecendo dúvidas sobre os itens do backlog e
+          alinhando as expectativas. Isso ajuda a evitar mal-entendidos e a garantir que o time entenda
+          claramente o que se espera deles.<br><br>
+          <b>Responsabilidade pelo Backlog:</b> Embora possa delegar algumas responsabilidades, o PO é o único
+          responsável pelas decisões relacionadas ao backlog e prioridades do produto. Ele deve garantir que o
+          backlog esteja sempre atualizado e refletindo as necessidades do negócio.<br>
+        </p>
+
+      </div>
+
+      <!-- Paginação -->
+      <div class="pagination">
+        <button class="active">1</button>
+        <button id="btn trilha3_2">2</button>
+        <button id="btn trilha3_3">3</button>
+      </div>
+    </main>
+  </div>
+  <script src="/JS/trilha3_1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Jornada Scrum</title>
+    <link rel="stylesheet" href="/css_ABP/login.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo"><img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum"></h2>
+       <nav class="navigation">
+        <a href="./template.html">Início</a>
+        <a href="./trilha_1_1.html">Sua Jornada</a>
+        <button id="btnLogin" class="btnlogin-popup">Login</button>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label >Email</label>
+                </div>
+                <!-- <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label >Senha</label> 
+                </div>
+                <div class="remember-forgot">
+                    <label ><input type="checkbox" >
+                    Lembre de mim</label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div> -->
+                <button type="submit" class="btn">Entrar</button>
+                <div class="login-register">
+                    <p>Você é um novo explorador?
+                        <a href="#" class="register-link">Cadastre-se</a> e tenha uma experiência completa!</p>
+                    </p>
+                </div>
+            </form>
+        </div> 
+
+        <div class="form-box register">
+            <h2>Cadastro</h2>
+            <form action="#">
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label> Nome completo</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label >Email</label>
+                </div>
+                <!-- <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label >Senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label ><input type="checkbox" >
+                    Estou de acordo com os Termos e Condições</label>
+                    
+                </div> -->
+                <button type="submit" class="btn">Criar conta</button>
+                <div class="login-register">
+                    <p>Já é um explorador?
+                        <a href="#" class="login-link">Faça seu Login</a> para ter a experiência completa!</p>
+                    </p>
+                </div>
+            </form>
+        </div> 
+
+    </div>
+    <script src="/JS/login1.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

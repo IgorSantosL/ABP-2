@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+
+      <!-- Conteúdo principal -->
+      <main class="content">
+        <div>
+          <h2>5ª Trilha – Missões no Scrum – Desafios em Cada Etapa!</h2>
+          <p></p>
+          <h3>Sprint review</h3>
+          <p>
+            Ao final de cada Sprint, é feita uma reunião com todos os membros do
+            time para discutir as atividades realizadas. É uma oportunidade para
+            discutir o que foi feito durante a Sprint, incluindo sucessos,
+            dificuldades e o que não foi concluído.<br />
+            Participam o Time Scrum e stakeholders convidados pelo Product Owner
+            (PO). A presença do PO nessa etapa é fundamental para que as
+            informações levantadas se tornem ações de melhoria em projetos
+            futuros.<br /><br />
+            • O PO esclarece quais itens do Backlog foram completados e quais
+            não foram.<br />
+            • O Time de Desenvolvimento fala sobre o que funcionou bem, os
+            problemas que surgiram e como foram resolvidos, além de demonstrar o
+            trabalho finalizado.<br />
+            • O grupo analisa o que deve ser feito a seguir, considerando
+            mudanças no mercado, orçamento, prazos e novas oportunidades.<br />
+            • O resultado dessa reunião é um Backlog do Produto revisado, que
+            define os itens para a próxima Sprint e ajustes necessários para
+            atender a novas demandas.
+          </p>
+
+        </div>
+
+        <!-- Paginação -->
+        <div class="pagination">
+          <button id="btn trilha5_1">1</button>
+          <button id="btn trilha5_2">2</button>
+          <button id="btn trilha5_3">3</button>
+          <button class="active">4</button>
+          <button id="btn trilha5_5">5</button>
+          <button id="btn trilha5_6">6</button>
+        </div>
+      </main>
+    </div>
+    <script src="/JS/trilha5_4.js"></script>
+  </body>
+</html>

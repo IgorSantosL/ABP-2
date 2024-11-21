@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+
+      <!-- Conteúdo principal -->
+      <main class="content">
+        <div>
+          <h2>Glossário</h2>
+          <ul>
+            <li>
+              <b> Scrum Master:</b> É o facilitador do processo Scrum,
+              garantindo que a equipe esteja aderindo aos princípios e práticas
+              do Scrum.
+            </li>
+            <br />
+            <li>
+              <b> Sprint:</b> É um período de tempo fixo (geralmente de 2 a 4
+              semanas) em que a equipe trabalha para entregar um conjunto de
+              funcionalidades.
+            </li>
+            <br />
+            <li>
+              <b> Sprint Backlog (Backlog da Sprint):</b> É uma lista de tarefas
+              específicas que devem ser concluídas durante uma iteração.
+            </li>
+            <br />
+            <li>
+              <b> Sprint Planning (Reunião de Planejamento da Sprint):</b> É uma
+              reunião realizada no início de cada Sprint para definir as metas e
+              o plano de trabalho.
+            </li>
+            <br />
+            <li>
+              <b> Sprint Retrospective (Retrospectiva da Sprint):</b> É uma
+              reunião realizada ao final de cada Sprint para refletir sobre o
+              processo e identificar melhorias.
+            </li>
+            <br />
+            <li>
+              <b> Sprint Review (Revisão da Sprint):</b> É uma reunião realizada
+              ao final de cada Sprint para revisar o trabalho concluído e obter
+              feedback dos stakeholders.
+            </li>
+            <br />
+            <li>
+              <b> Stakeholder:</b> Qualquer pessoa ou grupo com interesse ou
+              envolvimento no projeto, como clientes, gerentes ou usuários
+              finais.
+            </li>
+            <br />
+            <li>
+              <b> Tarefas:</b> Atividades específicas que precisam ser
+              realizadas para completar uma história ou épico.
+            </li>
+            <br />
+            <li>
+              <b> Timebox:</b> Um período de tempo fixo, como um sprint, durante
+              o qual um conjunto específico de atividades deve ser concluído.
+            </li>
+            <br />
+            <li>
+              <b> Velocity:</b> É a quantidade de trabalho concluído pela equipe
+              em uma Sprint.
+            </li>
+            <br />
+          </ul>
+        </div>
+
+        <!-- Paginação -->
+        <div class="pagination">
+          <button id="glossario1_1">1</button>
+          <button class="active">2</button>
+        </div>
+      </main>
+    </div>
+    <script src="/JS/glossario2.js"></script>
+  </body>
+</html>

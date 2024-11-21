@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            <div>
+                <form action="/submit-questoes" method="POST">
+                    <h2>3ª Trilha: Checando seu conhecimento</h2>
+                    <ol>
+                        <li>
+                            Um time Scrum é composto por: Product Owner, Scrum Master e Time de Desenvolvimento.
+                            <br><br>
+                            Classifique a afirmação acima como verdadeira ou falsa.
+                            <br><br>
+                            <input type="radio" id="questao1_true" name="questao1" value="true"> Verdadeira
+                            <input type="radio" id="questao1_false" name="questao1" value="false"> Falsa
+                        </li>
+                        <li>
+                            A revisão do Backlog, Daily Scrum, Reunião de coordenação e Sprint, são eventos essenciais para garantir o ciclo contínuo de entregas e melhorias em um projeto Scrum.
+                            <br><br>
+                            Classifique a afirmação acima como verdadeira ou falsa.
+                            <br><br>
+                            <input type="radio" id="questao2_true" name="questao2" value="true"> Verdadeira
+                            <input type="radio" id="questao2_false" name="questao2" value="false"> Falsa
+                        </li>
+                        <li>
+                            Os principais elementos que definem a estrutura de um time Scrum: Hierarquia fixa, especialização única e reuniões diárias.
+                            <br><br>
+                            Classifique a afirmação acima como verdadeira ou falsa.
+                            <br><br>
+                            <input type="radio" id="questao3_true" name="questao3" value="true"> Verdadeira
+                            <input type="radio" id="questao3_false" name="questao3" value="false"> Falsa
+                        </li>
+                    </ol>
+                    <br><br>                                  
+            </div>
+            <div class="Enviar">
+                <button type="submit">Enviar</button>
+            </div>
+        </main>
+    </div>
+    <script src="/JS/template.js"></script>
+</body>
+</html>

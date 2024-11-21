@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+
+      <!-- Conteúdo principal -->
+      <main class="content">
+        <div>
+          <h2>5ª Trilha – Missões no Scrum – Desafios em Cada Etapa!</h2>
+
+          <h3>Sprint</h3>
+          <p>
+            O coração do Scrum é a Sprint, um time-boxed de um mês ou menos,
+            durante o qual um “Pronto”, versão incremental potencialmente
+            utilizável do produto, é criado. Sprints tem durações coerentes em
+            todo o esforço de desenvolvimento. Uma nova Sprint inicia
+            imediatamente após a conclusão da Sprint anterior. As Sprints são
+            compostas por uma reunião de planejamento da Sprint, reuniões
+            diárias, o trabalho de desenvolvimento, uma revisão da Sprint e a
+            retrospectiva da Sprint.<br />
+            Quando se usa Scrum, todas as atividades são feitas dentro de
+            sprints, que são os ciclos de desenvolvimento. A duração de cada
+            sprint depende do projeto, mas sua principal característica é a
+            curta duração, o que explica a denominação “ágil” ao se falar da
+            metodologia. O resultado deve ser a entrega de algo tangível para o
+            cliente.<br /><br />
+          </p>
+
+          <h4>Durante a Sprint:</h4>
+          <br />
+          <p>
+            • Não são feitas mudanças que possam colocar em perigo o objetivo da
+            Sprint;<br />
+            • As metas de qualidade não diminuem;<br />
+            • O escopo pode ser clarificado e renegociado entre o Product Owner
+            e o Time de Desenvolvimento quanto mais for aprendido.
+          </p>
+
+          
+        </div>
+
+        <!-- Paginação -->
+        <div class="pagination">
+          <button id="btn trilha5_1">1</button>
+          <button class="active">2</button>
+          <button id="btn trilha5_3">3</button>
+          <button id="btn trilha5_4">4</button>
+          <button id="btn trilha5_5">5</button>
+          <button id="btn trilha5_6">6</button>
+        </div>
+      </main>
+    </div>
+    <script src="/JS/trilha5_2.js"></script>
+  </body>
+</html>

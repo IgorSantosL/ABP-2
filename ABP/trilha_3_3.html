@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jornada Scrum</title>
+  <script src="./JS/geral.js"></script>
+  <script src="./JS/questao.js"></script>
+  <link rel="stylesheet" href="/css_ABP/introdução.css" />
+</head>
+
+<body onload="carregarLogin();listarQuestao();exibirMail()">
+  <header>
+    <h2 class="logo">
+      <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
+    </h2>
+    <nav class="navigation">
+      <a href="./template.html">Início</a>
+      <a href="./trilha_1_1.html">Sua Jornada</a>
+      <button id="botao-logout" class="botao-logout" onclick="logout()">Logout</button>
+      <button id="btnLogin" class="btnlogin-popup">Login</button>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <div>
+        <h2>Trilha de conhecimento</h2>
+        <ul>
+          <li>
+            <a href="./trilha_1_1.html">1ª Trilha<br />
+              <p>Iniciando sua Jornada</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_2_1.html">2ª Trilha<br />
+              <p>Diferenciais em Jogo </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_3_1.html">3ª Trilha<br />
+              <p>Papéis no Scrum</p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_4_1.html">4ª Trilha<br />
+              <p>Explorando os Backlogs </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_5_1.html">5ª Trilha<br />
+              <p>Missões no Scrum </p>
+            </a>
+          </li>
+          <li>
+            <a href="./trilha_6_1.html">6ª Trilha<br />
+              <p>Finalizando sua jornada</p>
+            </a>
+          </li>
+          <li><a href="./glossario_1.html">Glossário</a></li>
+        </ul>
+      </div>
+      <div class="progress-bar">Missões concluídas: 0%</div>
+    </aside>
+
+
+    <!-- Conteúdo principal -->
+    <main class="content">
+      <div>
+        <h2>3ª Trilha – Papéis no Scrum - Conheça os Personagens!</h2>
+        <h3>Time:</h3>
+        <p>
+       
+        A equipe scrum é o grupo multifuncional responsável por transformar
+        os itens do backlog do produto em incrementos ─ ou seja, entregas
+        concretas que avançam o desenvolvimento ─ dentro de uma sprint ─ um
+        intervalo de tempo pré-determinado, geralmente de uma a quatro
+        semanas, no qual a equipe desenvolve uma versão incremental e
+        utilizável do produto. Essa equipe geralmente inclui
+        desenvolvedores, designers, testers e outras funções necessárias
+        para completar as tarefas, tornando-a autônoma e colaborativa.<br><br>
+        <b>Responsabilidade pela Entrega:</b> O Time de Desenvolvimento é
+        responsável por criar incrementos de produto que atendam às
+        definições de "pronto" estabelecidas pela equipe. Isso inclui a
+        implementação de funcionalidades, realização de testes e
+        documentação necessária.<br><br>
+        <b>Auto-organização:</b> O Time de Desenvolvimento é uma equipe
+        auto-organizada, o que significa que eles têm a liberdade de decidir
+        como realizar seu trabalho. Eles determinam a melhor forma de
+        organizar suas tarefas e quem trabalhará em cada item do backlog,
+        promovendo um ambiente de confiança e colaboração.<br><br>
+        <b>Multifuncionalidade:</b> A equipe é composta por membros com
+        diversas habilidades, permitindo que realizem todas as atividades
+        necessárias para completar um item do backlog. Isso pode incluir
+        desenvolvimento, testes, design e até mesmo suporte ao cliente.<br><br>
+        <b>Cooperação e Colaboração:</b> Os membros do Time de
+        Desenvolvimento devem trabalhar juntos de forma colaborativa,
+        compartilhando conhecimentos e ajudando uns aos outros. A
+        comunicação aberta e honesta é essencial para o sucesso do time.<br><br>
+        <b>Tamanho Ideal da Equipe:</b> O Scrum recomenda que o Time de
+        Desenvolvimento tenha entre 3 a 9 pessoas. Essa faixa permite que a
+        equipe tenha capacidade suficiente para realizar um trabalho
+        significativo, mas também permanece ágil e capaz de se adaptar
+        rapidamente às mudanças.<br><br>
+        Por isso, o Scrum é amplamente adotado em projetos complexos e de
+        grande escala, como o desenvolvimento de software, mas também pode
+        ser adaptado para outras áreas onde a colaboração, adaptação e
+        entregas frequentes são importantes.
+        </p>
+        <div class="questionario">
+          <h3 class="highlight">
+            <span>Ótimo progresso! Esta é mais uma missão importante em sua jornada.
+              <br>Complete-a para estar cada vez mais próximo da vitória final!</span>
+          </h3>
+          <br>
+          <div class="btn_questionario">
+            <button id="btn_questionario" type="submit">Começar questionário</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paginação -->
+      <div class="pagination">
+        <button id="btn trilha3_1">1</button>
+        <button id="btn trilha3_2">2</button>
+        <button class="active">3</button>
+      </div>
+    </main>
+  </div>
+  <script src="/JS/trilha3_3.js"></script>
+</body>
+
+</html>
