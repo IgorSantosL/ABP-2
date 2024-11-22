@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jornada Scrum</title>
   <script src="./JS/geral.js"></script>
-  <script src="./JS/questao.js"></script>
+  <script src="./JS/questionariocinco.js"></script>
   <link rel="stylesheet" href="/css_ABP/introdução.css" />
 </head>
 
-<body onload="carregarLogin();listarQuestao();exibirMail()">
+<body onload="carregarLogin();listarQuestao();">
   <header>
     <h2 class="logo">
       <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
@@ -73,7 +73,7 @@
     <!-- Conteúdo principal -->
     <main class="content">
       <div>
-        <form action="/submit-questoes" method="POST">
+        <form id="questionario" method="POST">
           <h2>5ª Trilha: Checando seu conhecimento</h2>
           <ol>
             <li>
@@ -81,8 +81,8 @@
               <br><br>
               Classifique a afirmação acima como verdadeira ou falsa.
               <br><br>
-              <input type="radio" id="questao1_true" name="questao1" value="true"> Verdadeira
-              <input type="radio" id="questao1_false" name="questao1" value="false"> Falsa
+              <input type="radio" id="questao1_true" name="q1" value="true"> Verdadeira
+              <input type="radio" id="questao1_false" name="q1" value="false"> Falsa
             </li>
             <li>
               O Scrum Master não pode tomar decisões sobre o produto, ele apenas facilita o processo e remove
@@ -90,8 +90,8 @@
               <br><br>
               Classifique a afirmação acima como verdadeira ou falsa.
               <br><br>
-              <input type="radio" id="questao2_true" name="questao2" value="true"> Verdadeira
-              <input type="radio" id="questao2_false" name="questao2" value="false"> Falsa
+              <input type="radio" id="questao2_true" name="q2" value="true"> Verdadeira
+              <input type="radio" id="questao2_false" name="q2" value="false"> Falsa
             </li>
             <li>
               O Time de Desenvolvimento no Scrum é autogerenciado e tem como responsabilidades decidir como organizar e
@@ -99,14 +99,14 @@
               <br><br>
               Classifique a afirmação acima como verdadeira ou falsa.
               <br><br>
-              <input type="radio" id="questao3_true" name="questao3" value="true"> Verdadeira
-              <input type="radio" id="questao3_false" name="questao3" value="false"> Falsa
+              <input type="radio" id="questao3_true" name="q3" value="true"> Verdadeira
+              <input type="radio" id="questao3_false" name="q3" value="false"> Falsa
             </li>
           </ol>
           <br><br>
       </div>
       <div class="Enviar">
-        <button type="submit">Enviar</button>
+        <button id="enviarRespostas" type="button">Enviar</button>
       </div>
     </main>
   </div>

@@ -1,9 +1,9 @@
 function listarQuestao() {
     // Verifica se o usuário está logado
     if (usuarioLogado) {
-        document.getElementById("btnLogin").style.display = "none";
+      document.getElementById("btnLogin").style.display="none"
     } else {
-        alert("Ocorreu um erro ao se conectar com o servidor.");
+        alert("Ocorreu um erro ao se conectar com o servidor.")
     }
 }
 
@@ -39,15 +39,14 @@ async function verificarProgresso(numeroQuestionario) {
     }
 }
 
-
 document.addEventListener('DOMContentLoaded', async () => {
-    await verificarProgresso(1);
+    await verificarProgresso(2);
 
-    const usuarioRespondeu = localStorage.getItem('questionario1Respondido');
+    const usuarioRespondeu = localStorage.getItem('questionario2Respondido');
     if (usuarioRespondeu === 'true') {
         alert('Você já passou neste questionário e não pode respondê-lo novamente.');
         document.getElementById('enviarRespostas').disabled = true;
-        window.location.href = 'trilha_2_1.html';
+        window.location.href = 'trilha_3_1.html';
     }
 });
 
@@ -55,8 +54,8 @@ document.getElementById('enviarRespostas').addEventListener('click', async () =>
     const form = document.getElementById('questionario');
 
     // IDs das questões do questionário atual (ajuste para cada questionário)
-    const questionarioAtual = [1, 2, 3];
-    const numeroQuestionario = 1; // Número do questionário atual
+    const questionarioAtual = [4, 5, 6];
+    const numeroQuestionario = 2; // Número do questionário atual
 
     // Mapeia as respostas do formulário
     const respostas = questionarioAtual.map((idquestao, index) => ({
@@ -92,7 +91,7 @@ document.getElementById('enviarRespostas').addEventListener('click', async () =>
             if (result.redirect) {
                 alert('Você obteve êxito no questionário. Parabéns!');
                 document.getElementById('enviarRespostas').disabled = true;
-                localStorage.setItem('questionario1Respondido', 'true');
+                localStorage.setItem('questionario2Respondido', 'true');
                 window.location.href = result.redirect;
             } else {
                 alert('Você não atingiu o número mínimo de acertos. Tente novamente.');

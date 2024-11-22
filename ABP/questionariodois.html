@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jornada Scrum</title>
   <script src="./JS/geral.js"></script>
-  <script src="./JS/questao.js"></script>
+  <script src="./JS/questionariodois.js" defer></script>  <!-- Certifique-se de usar "defer" para carregar o JS após o HTML -->
   <link rel="stylesheet" href="/css_ABP/introdução.css" />
 </head>
 
-<body onload="carregarLogin();listarQuestao();exibirMail()">
+<body onload="carregarLogin();listarQuestao();">
   <header>
     <h2 class="logo">
       <img class="logo" src="/Assets/d8branco 1.png" alt="Logo da Jornada Scrum" />
@@ -27,86 +27,65 @@
       </div>
     </nav>
   </header>
+
   <div class="container">
     <!-- Barra lateral -->
     <aside class="sidebar">
       <div>
         <h2>Trilha de conhecimento</h2>
         <ul>
-          <li>
-            <a href="./trilha_1_1.html">1ª Trilha<br />
-              <p>Iniciando sua Jornada</p>
-            </a>
-          </li>
-          <li>
-            <a href="./trilha_2_1.html">2ª Trilha<br />
-              <p>Diferenciais em Jogo </p>
-            </a>
-          </li>
-          <li>
-            <a href="./trilha_3_1.html">3ª Trilha<br />
-              <p>Papéis no Scrum</p>
-            </a>
-          </li>
-          <li>
-            <a href="./trilha_4_1.html">4ª Trilha<br />
-              <p>Explorando os Backlogs </p>
-            </a>
-          </li>
-          <li>
-            <a href="./trilha_5_1.html">5ª Trilha<br />
-              <p>Missões no Scrum </p>
-            </a>
-          </li>
-          <li>
-            <a href="./trilha_6_1.html">6ª Trilha<br />
-              <p>Finalizando sua jornada</p>
-            </a>
-          </li>
+          <li><a href="./trilha_1_1.html">1ª Trilha</a></li>
+          <li><a href="./trilha_2_1.html">2ª Trilha</a></li>
+          <li><a href="./trilha_3_1.html">3ª Trilha</a></li>
+          <li><a href="./trilha_4_1.html">4ª Trilha</a></li>
+          <li><a href="./trilha_5_1.html">5ª Trilha</a></li>
+          <li><a href="./trilha_6_1.html">6ª Trilha</a></li>
           <li><a href="./glossario_1.html">Glossário</a></li>
         </ul>
       </div>
       <div class="progress-bar">Missões concluídas: 0%</div>
     </aside>
 
+    <!-- Conteúdo principal -->
+    <main class="content">
+      <div>
+        <form id="questionario" action="/submit-questoes" method="POST">
+          <h2>2ª Trilha: Checando seu conhecimento</h2>
+          <ol>
+            <li>
+              O principal objetivo do Scrum é o de organizar uma equipe para desenvolver um produto mais rapidamente.
+              <br><br>
+              Classifique a afirmação acima como verdadeira ou falsa.
+              <br><br>
+              <input type="radio" id="questao1_true" name="q1" value="true"> Verdadeira
+              <input type="radio" id="questao1_false" name="q1" value="false"> Falsa
+            </li>
+            <li>
+              O aumento da equipe para mais de 15 pessoas é algo que ajuda a tornar as reuniões diárias no Scrum mais rápidas.
+              <br><br>
+              Classifique a afirmação acima como verdadeira ou falsa.
+              <br><br>
+              <input type="radio" id="questao2_true" name="q2" value="true"> Verdadeira
+              <input type="radio" id="questao2_false" name="q2" value="false"> Falsa
+            </li>
+            <li>
+              Normalmente, uma equipe Scrum é composta por grupos entre 9 a no máximo 10 pessoas.
+              <br><br>
+              Classifique a afirmação acima como verdadeira ou falsa.
+              <br><br>
+              <input type="radio" id="questao3_true" name="q3" value="true"> Verdadeira
+              <input type="radio" id="questao3_false" name="q3" value="false"> Falsa
+            </li>
+          </ol>
+        </form>
+      </div>
+      <div class="Enviar">
+        <button id="enviarRespostas" type="submit">Enviar</button>
+      </div>
+    </main>
+  </div>
 
-        <!-- Conteúdo principal -->
-        <main class="content">
-            <div>
-                <form action="/submit-questoes" method="POST">
-                    <h2>2ª Trilha: Checando seu conhecimento</h2>
-                    <ol>
-                        <li>
-                            O principal objetivo do Scrum é o de organizar uma equipe para desenvolver um produto mais rapidamente.
-                            <br><br>
-                            Classifique a afirmação acima como verdadeira ou falsa.
-                            <br><br>
-                            <input type="radio" id="questao1_true" name="questao1" value="true"> Verdadeira
-                            <input type="radio" id="questao1_false" name="questao1" value="false"> Falsa
-                        </li>
-                        <li>
-                            O aumento da equipe para mais de 15 pessoas é algo que ajuda a tornar as reuniões diárias no Scrum mais rápidas.
-                            <br><br>
-                            Classifique a afirmação acima como verdadeira ou falsa.
-                            <br><br>
-                            <input type="radio" id="questao2_true" name="questao2" value="true"> Verdadeira
-                            <input type="radio" id="questao2_false" name="questao2" value="false"> Falsa
-                        </li>
-                        <li>
-                            Normalmente, uma equipe Scrum é composta por grupos entre 9 a no máximo 10 pessoas.
-                            <br><br>
-                            Classifique a afirmação acima como verdadeira ou falsa.
-                            <br><br>
-                            <input type="radio" id="questao3_true" name="questao3" value="true"> Verdadeira
-                            <input type="radio" id="questao3_false" name="questao3" value="false"> Falsa
-                        </li>
-                    </ol>                
-            </div>
-            <div class="Enviar">
-                <button type="submit">Enviar</button>
-            </div>
-        </main>
-    </div>
-    <script src="/JS/template.js"></script>
+  <script src="/JS/template.js"></script>
 </body>
+
 </html>

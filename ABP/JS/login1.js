@@ -53,6 +53,18 @@ registerForm.addEventListener("submit", async (event) => {
 // Seleciona o formulário de login pelo ID ou outra forma
 const loginForm = document.querySelector(".form-box.login form"); // Supondo que o formulário tenha o ID "login-form"
 
+//deixando os localStorage false
+localStorage.setItem('questionario1Respondido', 'false');
+localStorage.setItem('questionario2Respondido', 'false');
+localStorage.setItem('questionario3Respondido', 'false');
+localStorage.setItem('questionario4Respondido', 'false');
+localStorage.setItem('questionario5Respondido', 'false');
+localStorage.setItem('questionario6Respondido', 'false');
+
+
+
+
+
 // Lógica de Login
 loginForm.addEventListener("submit", async (event) => {
   event.preventDefault();
