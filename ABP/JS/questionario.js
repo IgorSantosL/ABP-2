@@ -13,7 +13,7 @@ document.getElementById('enviarRespostas').addEventListener('click', async () =>
   const form = document.getElementById('questionario');
   const respostas = {
       q1: form.q1.value === "true",
-      q2: form.q2.value === "true",
+      q2: form.q2.value === "true", 
       q3: form.q3.value === "true",
   };
   console.log('Respostas:', respostas);
